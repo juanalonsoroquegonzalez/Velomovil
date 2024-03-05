@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Velomovil1.Views.ItemsPage"
+             Title="{Binding Title}"
+             xmlns:local="clr-namespace:Velomovil1.ViewModels"  
+             xmlns:model="clr-namespace:Velomovil1.Models"  
+             x:Name="Controles">
+    <!--
+      x:DataType enables compiled bindings for better performance and compile time validation of binding expressions.
+      https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/data-binding/compiled-bindings
+    -->
+    <ScrollView Grid.Row="1">
+        <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+            <Label Text="Botones de emergencia" FontSize="Title"/>
+            
+            <Frame Margin="5" BackgroundColor="LightGray" CornerRadius="65">
+                <Button Text="Freno" 
+                BackgroundColor="Red"
+                CornerRadius="60" 
+                WidthRequest="120" 
+                HeightRequest="120" />
+            </Frame>
+            <Frame Margin="5" BackgroundColor="LightGray" CornerRadius="65">
+                <Button Text="Desactivar freno" 
+                BackgroundColor="LawnGreen"
+                CornerRadius="60" 
+                WidthRequest="120" 
+                HeightRequest="120" />
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

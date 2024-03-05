@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Velomovil1.Views.AboutPage"
+             xmlns:vm="clr-namespace:Velomovil1.ViewModels"
+             Title="{Binding Title}">
+
+    
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="Automovil Sustentable" FontSize="Title"/>
+                <Label Text="Este es un proyecto de un automovil electrico automatico." FontSize="16" Padding="0,0,0,0"/>
+                <Label FontSize="16" Padding="0,24,0,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Aprende más en:"/>
+                                <Span Text="http://www.cucei.udg.mx/" FontAttributes="Bold"/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Button Margin="0,10,0,0" Text="Aprende más"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="#9CEE3F"
+                        TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    
+
+</ContentPage>
